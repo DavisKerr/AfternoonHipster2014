@@ -1,6 +1,7 @@
 package hipster.view;
 
 import java.awt.Color;
+import java.awt.Image;
 
 import hipster.controller.HipsterAppController;
 
@@ -21,7 +22,7 @@ public class HipsterPanel extends JPanel
 		baseLayout = new SpringLayout();
 		albumLabel = new JLabel("Album info here :D");
 		baseLayout.putConstraint(SpringLayout.WEST, albumLabel, 72, SpringLayout.WEST, this);
-		hipsterImage = new JLabel("name");
+		hipsterImage = new JLabel("Davis Hipster", new ImageIcon(HipsterPanel.class.getResource("/hipster/view/images/davis_hipster.jpg")), JLabel.CENTER);
 		
 		albumBox = new JComboBox();
 		
