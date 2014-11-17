@@ -62,6 +62,8 @@ public class HipsterPanel extends JPanel
 	private void setupListeners()
 	{
 		
+		
+		
 	}
 	
 }

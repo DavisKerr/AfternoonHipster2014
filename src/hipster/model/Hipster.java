@@ -8,10 +8,23 @@ package hipster.model;
 
 public class Hipster 
 {
+	
+	/**
+	 * The name of the "Hipster"
+	 */
 	private String name;
+	/**
+	 * The age of the "Hipster"
+	 */
 	private int age;
+	/**
+	 * The hipster album.
+	 */
 	private String [] hipsterAlbums;
 	
+	/**
+	 * constructs the Hipster with default name, age, and albums.
+	 */
 	public Hipster()
 	{
 		
@@ -21,6 +34,12 @@ public class Hipster
 		
 	}
 	
+	
+	/**
+	 * Constucts the hipster with name and age given from anouther class.
+	 * @param name what the hipster is called
+	 * @param age how old the hipster is.
+	 */
 	public Hipster(String name, int age)
 	{
 		this.name = name;
