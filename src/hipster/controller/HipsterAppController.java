@@ -12,6 +12,8 @@ import hipster.view.HipsterFrame;
  */
 public class HipsterAppController 
 {
+	
+	
 /**
  * The frame for the gui
  */
@@ -32,8 +34,8 @@ private String [] myAlbums;
 	{
 		// Creates a new hipster with the name of davis and an age of 17:
 		selfHipster = new Hipster("Davis", 17); 
+		
 		buildAlbumArray();
-		selfHipster.setHipsterAlbums(myAlbums);
 		baseFrame = new HipsterFrame(this);
 	}
 	
@@ -52,6 +54,8 @@ private String [] myAlbums;
 	 */
 	private void buildAlbumArray()
 	{
+		
+		
 		//three ways to build an array:
 		
 		//kind of hipster
@@ -60,6 +64,7 @@ private String [] myAlbums;
 		myAlbums[1] = "THIS IS HIPSTER!!!";
 		myAlbums[2] = "My name is hipster. THE hipster";
 		myAlbums[3] = "Studio HIPSTER";
+		selfHipster.setHipsterAlbums(myAlbums);
 		//hipster
 		String [] otherAlbums = {"stuff", "other", "way for", "hipster array"};
 		
@@ -69,6 +74,10 @@ private String [] myAlbums;
 		wierdAlbums = new String [] {"sfdsagfsad", "dsfasgg", "fsfsgs", "dfgs"};
 	}
 	
+	/**
+	 * returns the value of the Hipster.
+	 * @return selfHipster
+	 */
 	public Hipster getSelfHipster()
 	{
 		return selfHipster;

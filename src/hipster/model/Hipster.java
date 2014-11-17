@@ -65,23 +65,45 @@ public class Hipster
 		this.name = name;
 	}
 
+	
+	/**
+	 * Returns the age of the Hipster.
+	 * @return age
+	 */
 	public int getAge() 
 	{
 		return age;
 	}
-
+	
+	/**
+	 * sets the age of the Hipster.
+	 * @param age the age of the Hipster
+	 */
 	public void setAge(int age)
 	{
 		this.age = age;
 	}
-
+	
+	
+	/**
+	 * returns the value of hipsterAlbums.
+	 * @return hipsterAlbums
+	 */
 	public String[] getHipsterAlbums()
 	{
 		return hipsterAlbums;
 	}
-
+	
+	
+	/**
+	 * sets the array values.
+	 * @param hipsterAlbums The array of albums used for the combo box.
+	 */
 	public void setHipsterAlbums(String[] hipsterAlbums) 
 	{
 		this.hipsterAlbums = hipsterAlbums;
 	}
+	
+	
+	
 }
