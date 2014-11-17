@@ -2,7 +2,11 @@ package hipster.view;
 
 import java.awt.Color;
 import java.awt.Image;
+import java.awt.event.ItemEvent;
+import java.awt.event.ItemListener;
+
 import hipster.controller.HipsterAppController;
+
 import javax.swing.*;
 
 public class HipsterPanel extends JPanel
@@ -62,7 +66,31 @@ public class HipsterPanel extends JPanel
 	private void setupListeners()
 	{
 		
-		
+		albumBox.addItemListener(new ItemListener()
+		{
+
+			@Override
+			public void itemStateChanged(ItemEvent selected) 
+			{
+				
+				if(albumBox.getSelectedIndex() == 0)
+				{
+					albumLabel.setText("You are truly a hipster");
+				}
+				else if(albumBox.getSelectedIndex() <= 2)
+				{
+					albumLabel.setText("You may have some hipster quality");
+				}
+				else
+				{
+					albumLabel.setText("NOT A HIPSTER");
+				}
+				
+			}
+			
+			
+			
+		});
 		
 	}
 	
