@@ -2,9 +2,7 @@ package hipster.view;
 
 import java.awt.Color;
 import java.awt.Image;
-
 import hipster.controller.HipsterAppController;
-
 import javax.swing.*;
 
 public class HipsterPanel extends JPanel
@@ -35,6 +33,8 @@ public class HipsterPanel extends JPanel
 	
 	private void setupComboBox()
 	{
+		
+		albumBox.setModel(new DefaultComboBoxModel(baseController.getSelfHipster().getHipsterAlbums()));
 		
 	}
 	

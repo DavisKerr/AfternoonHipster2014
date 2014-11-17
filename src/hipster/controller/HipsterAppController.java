@@ -32,8 +32,8 @@ private String [] myAlbums;
 	{
 		// Creates a new hipster with the name of davis and an age of 17:
 		selfHipster = new Hipster("Davis", 17); 
-		
 		buildAlbumArray();
+		selfHipster.setHipsterAlbums(myAlbums);
 		baseFrame = new HipsterFrame(this);
 	}
 	
@@ -43,7 +43,7 @@ private String [] myAlbums;
 	public void start()
 	{
 		
-		selfHipster.setHipsterAlbums(myAlbums);
+		
 		
 	}
 	
@@ -67,6 +67,11 @@ private String [] myAlbums;
 		String [] wierdAlbums;
 		
 		wierdAlbums = new String [] {"sfdsagfsad", "dsfasgg", "fsfsgs", "dfgs"};
+	}
+	
+	public Hipster getSelfHipster()
+	{
+		return selfHipster;
 	}
 
 }

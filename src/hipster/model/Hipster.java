@@ -47,11 +47,19 @@ public class Hipster
 		hipsterAlbums = null;
 	}
 
+	/**
+	 * returns the name
+	 * @return name
+	 */
 	public String getName() 
 	{
 		return name;
 	}
-
+	
+	/**
+	 * sets the name.
+	 * @param name The hipsters name
+	 */
 	public void setName(String name) 
 	{
 		this.name = name;
